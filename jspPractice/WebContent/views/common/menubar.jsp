@@ -39,7 +39,7 @@
     <div class="login-area">
 
         <!-- case1. 로그인 전 -->
-        <form action="/jsp/login.me" method="post">
+        <form action="/jspPractice/login.me" method="post">
             <table>
                 <tr>
                     <th>아이디</th>
