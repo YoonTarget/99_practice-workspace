@@ -1,5 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%
+	String contextPath = request.getContextPath();
+%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -73,9 +76,9 @@
     <br>
     
     <div class="nav-area" align="center">
-        <div class="menu"><a href="">HOME</a></div>
+        <div class="menu"><a href="<%= contextPath %>">HOME</a></div>
         <div class="menu"><a href="">공지사항</a></div>
-        <div class="menu"><a href="">일반게시판</a></div>
+        <div class="menu"><a href="<%= contextPath %>/board.bo?cpage=1">일반게시판</a></div>
         <div class="menu"><a href="">사진게시판</a></div>
     </div>
 
